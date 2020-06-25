@@ -1,36 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Clock</title>
-</head>
-<body>
-    <div class="clock">
-        <div class="hour">
-            <div class="hr" id="hr">
-
-            </div>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="top"><span>12</span></div>
+      <div class="middle">
+        <span>9</span>
+        <div class="clock">
+          <div class="hour">
+            <div class="hr" id="hr"></div>
+          </div>
+          <div class="min">
+            <div class="mn" id="mn"></div>
+          </div>
+          <div class="sec">
+            <div class="sc" id="sc"></div>
+          </div>
         </div>
-        <div class="min">
-            <div class="mn" id="mn">
-
-            </div>
-        </div>
-        <div class="sec">
-            <div class="sc" id="sc">
-
-            </div>
-        </div>
+        <span>3</span>
+      </div>
+      <div class="bottom"><span>6</span></div>
     </div>
     <div id="digitalClock">
-        <div id="hour"></div>
-        <div id="minutes"></div>
-        <div id="seconds"></div>
-        <div id="ampm"></div>
+      <div id="hour"></div>
+      <div id="minutes"></div>
+      <div id="seconds"></div>
+      <div id="ampm"></div>
     </div>
- 
+
     <script type="text/javascript" src="./script.js"></script>
-</body>
+  </body>
 </html>

@@ -1,11 +1,11 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: consolas;
 }
 
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,17 +14,46 @@ body{
     background: #040615;
 }
 
-.clock{
-    width: 350px;
-    height: 350px;
+span {
+    color: #fff;
+    font-size: 4em;
+}
+
+.wrapper {
+    width: 400px;
+    height: 400px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     border: 8px solid #fff;
+    justify-content: space-between;
     border-radius: 50%;
 }
 
-.clock::before{
+.middle {
+    display: flex;
+    padding: 0 10px;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+}
+
+.top, .bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.clock {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    border-radius: 50%;
+}
+
+.clock::before {
     content: '';
     position: absolute;
     width: 15px;
@@ -34,44 +63,48 @@ body{
     border-radius: 50%;
 }
 
-.hour, .min, .sec{
+.hour, .min, .sec {
     position: absolute;
 }
 
-.hour, .hr{
+.hour, .hr {
     width: 200px;
     height: 200px;
 }
-.min, .mn{
+
+.min, .mn {
     width: 230px;
     height: 230px;
 }
-.sec, .sc{
+
+.sec, .sc {
     width: 250px;
     height: 250px;
 }
 
-.hr, .mn, .sc{
+.hr, .mn, .sc {
     display: flex;
     justify-content: center;
     position: absolute;
 }
 
-.hr::before{
+.hr::before {
     content: '';
     position: absolute;
     width: 8px;
     height: 100px;
     background: #fff;
 }
-.mn::before{
+
+.mn::before {
     content: '';
     position: absolute;
     width: 4px;
     height: 110px;
     background: #fff;
 }
-.sc::before{
+
+.sc::before {
     content: '';
     position: absolute;
     width: 2px;
@@ -79,10 +112,9 @@ body{
     background: #2196f3;
 }
 
-#digitalClock{
+#digitalClock {
     display: flex;
     color: #fff;
     font-size: 4em;
     margin-top: 20px;
 }
-
