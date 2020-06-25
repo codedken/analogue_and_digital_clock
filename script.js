@@ -27,14 +27,18 @@ setInterval(() => {
     am = "PM";
   }
 
+  if (h === 0) {
+    h = 12;
+  }
+
   //add zero before single digits numbers
 
   h = h < 10 ? "0" + h : h;
   m = m < 10 ? "0" + m : m;
   s = s < 10 ? "0" + s : s;
 
-  hour.innerHTML = h + ":";
-  minutes.innerHTML = m + ":";
-  seconds.innerHTML = s + "&nbsp";
+  hour.innerHTML = h + " :&nbsp";
+  minutes.innerHTML = " " + m + " :&nbsp";
+  seconds.innerHTML = " " + s + "&nbsp";
   ampm.innerHTML = am;
 });
